@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/category": {
+            "get": {
+                "tags": [
+                    "Category"
+                ],
+                "summary": "List of Categories",
+                "description": "Retrieve a list of book categories",
+                "operationId": "listCategory",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {},
+                                "example": {
+                                    "success": true,
+                                    "message": "Successfully retrieved categories",
+                                    "data": [
+                                        {
+                                            "id": 1,
+                                            "name": "Fiction"
+                                        },
+                                        {
+                                            "id": 2,
+                                            "name": "Non-Fiction"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Category",
+            "description": "Category"
+        }
+    ]
+}
