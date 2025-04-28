@@ -1,5 +1,19 @@
 {
     "openapi": "3.0.0",
+    "info": {
+        "title": "API Documentation",
+        "description": "Documentation for the API",
+        "contact": {
+            "email": "youremail@example.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000/api",
+            "description": "Main API Server"
+        }
+    ],
     "paths": {
         "/category": {
             "get": {
